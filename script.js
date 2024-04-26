@@ -69,4 +69,14 @@ document.addEventListener("DOMContentLoaded", function() {
       extrasSvg.appendChild(g);
     });
   });
-  
+
+
+let promContainer = document.querySelector('#prom-container')
+let fakeOut = document.querySelector('#fakeout-container')
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        fakeOut.classList.add('d-none');
+        promContainer.classList.remove('d-none');
+    }
+})
